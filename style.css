@@ -1,4 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins: 200,300,400,500,600,700,800,900&display=swap');
+@import "./sass/vendors/bootstrap.scss";
+
+@import "./sass/abstracts/mixins";
+@import "./sass/abstracts/variables";
+@import "./sass/abstracts/helpers";
+
+@import "./sass/base/base";
+@import "./sass/base/typography";
+
+@import "./sass/components/buttons";
+
+@import "./sass/layout/footer";
+@import "./sass/layout/sections";
+
+@import "./sass/sections/about";
+@import "./sass/sections/contact";
+@import "./sass/sections/hero";
+@import "./sass/sections/projects";
 
 * {
     margin-top: 20px 0px 20px;
@@ -86,6 +104,22 @@ body {
     font-weight: 600;
     letter-spacing: 1px;
     margin-bottom: 20px;
+}
+
+.download {
+    background-color: #095c83;
+    color: #fff;
+    text-transform: lowercase;
+    font-weight: 100;
+    font-family: 'poppins', sans-serif;
+    font-size: 1.5rem;
+    padding: 5px;
+    border-radius: 30px;
+
+}
+
+.download:hover {
+    cursor: pointer;
 }
 
 .contactInfo ul {
